@@ -1,4 +1,4 @@
-% circuit_reliability.pl (refatorado - ordem didática)
+% circuit_reliability.pl 
 % Projeto didático: confiabilidade e disponibilidade de um circuito eletrônico simples
 % Estrutura: system -> circuit -> component -> topology
 % Ordem das seções: fatos, helpers, confiabilidade (componente), confiabilidade (bloco),
