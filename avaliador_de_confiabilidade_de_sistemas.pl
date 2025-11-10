@@ -31,16 +31,16 @@ circuit(lab_circuit, aux_stage).
 
 % component(Name, Circuit, Type, Lambda_per_year, MTTR_hours)
 component(v_aux,   aux_stage, source,    0.2,  4).    
-component(r5,      aux_stage, resistor,  0.04, 2).   
+component(r3,      aux_stage, resistor,  0.04, 2).   
 component(c1,      aux_stage, capacitor, 0.01, 1).    
-component(r6,      aux_stage, resistor,  0.02, 2).    
+component(r4,      aux_stage, resistor,  0.02, 2).    
 
 % topologia do circuito auxiliar
 topology(lab_circuit,
     serie([
         v_aux,
-        paralelo([r5, c1]),
-        r6
+        paralelo([r4, c1]),
+        r3
     ])
 ).
 
