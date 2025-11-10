@@ -222,9 +222,9 @@ ctmc_transient(Name, Hours, P_up, P_down) :-
 % ?- lambda_equivalent_topology(lab_circuit, LambdaPerYear).
 % ?- system_failure_rate(lab_circuit, Lambda).
 % ?- expected_failures_per_year(lab_circuit, E).
-% ?- component_availability(v_src, Av).
+% ?- component_availability(v, Av).
 % ?- system_availability_topology(lab_circuit, A).
-% ?- ctmc_transient(v_src, 48, Pup, Pdown).
+% ?- ctmc_transient(v, 48, Pup, Pdown).
 %
 % ---------------------------------------------------------------------
 % Fim
