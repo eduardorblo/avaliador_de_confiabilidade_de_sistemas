@@ -13,17 +13,16 @@ circuit(lab_circuit, main_stage).
 % component(Name, Circuit, Type, Lambda_per_year, MTTR_hours)
 % Os componentes podem ser acrescidos e alterados segundo a MIL-HDBK-217F.
 % link para consulta: https://www.quanterion.com/wp-content/uploads/2014/09/MIL-HDBK-217F.pdf?srsltid=AfmBOor_DY5zl3P9ZAK1ne6p65tFm4pkkF_sqRV06Xwqe9cHmzrmCN1r
-component(v1,  main_stage, source,   0.3  ,  3 ).     
-component(r3,     main_stage, resistor,  0.03,  2). 
-
-circuit(lab_circuit, main_stage)
+component(v,  main_stage, source,   0.3  ,  3 ).     
+component(r1,     main_stage, resistor,  0.03,  2).
+component(r2,     main_stage, resistor,  0.03,  2). 
 
 % representação da topologia do circuito exemplo. Deve ser modificada segundo as alterações dos componentes.
 topology(lab_circuit,
     serie([
-        v_src,
-        paralelo([r2, l04]),
-        r3
+        v,
+        paralelo([v, r1]),
+        r2
     ])
 ).
 
